@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #1E1E1E;  /* Charcoal Black */
+  --secondary-color: #4A4A4A; /* Dark Gray */
+  --accent-color: #FFD700;    /* Gold */
+  --text-color: #FFFFFF;      /* White */
+}
+
+.custom-navbar {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+}
+
+.navbar-logo {
+  color: var(--accent-color) !important;
+}
+
+.navbar-logo h1{
+  font-size: clamp(18px, 3.8vw, 34px) !important;
+  text-transform: uppercase;
+  font-weight: bolder !important;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-dropdown {
+  font-size: 1.2rem !important;
+  color: var(--text-color) !important;
+  margin-right: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-toggle:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Ensure dropdown uses correct styles */
+.navbar .dropdown-menu {
+  background-color: var(--primary-color) !important;
+  border: none;
+  display: none; 
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Style dropdown items */
+.navbar .dropdown-menu .dropdown-item {
+  color: var(--text-color) !important;
+  background-color: var(--primary-color) !important;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: var(--secondary-color) !important;
+  color: var(--accent-color) !important;
+}
+
+/* Show dropdown on hover */
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  margin-top: 0;
+}
+
+/* Navbar toggler button color */
+.navbar-toggler {
+  border-color: var(--accent-color);
+}
+
+/* Add smooth transition for toggler */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}

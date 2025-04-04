@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #1E1E1E;
+  --secondary-color: #4A4A4A;
+  --accent-color: #FFD700;
+  --text-color: #FFFFFF;
+  --button-color: #FFD000;
+}
+
+#Ourworkcard {
+  padding: 0px 80px;
+  background-color: var(--text-color);
+}
+
+#Ourworkcard .row {
+  margin-bottom: 60px;
+}
+
+#Ourworkcard .col {
+  margin-bottom: 30px;
+}
+
+#Ourworkcard h2 {
+  color: var(--primary-color);
+  font-size: clamp(18px, 4vw, 30px);
+  font-weight: 600;
+}
+
+#Ourworkcard p {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: clamp(10px, 1.3vw, 18px);
+}
+
+#Ourworkcard ul li {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: clamp(10px, 1.3vw, 18px);
+}
+
+#Ourworkcard .imagge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Ourworkcard img{
+  pointer-events: none;
+  -webkit-user-drag: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(44, 44, 44, 0.521);
+  display: block;
+  margin: 0 auto;
+}
+
+
+ /* Responsive padding adjustments */
+
+ @media (max-width: 1024px) {
+  #Ourworkcard {
+    padding: 0px 60px;
+  }
+}
+
+@media (max-width: 820px) {
+  #Ourworkcard {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 660px) {
+  #Ourworkcard {
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  #Ourworkcard {
+    padding: 0px 20px;
+  }
+}
+
+
