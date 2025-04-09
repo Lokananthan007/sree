@@ -27,7 +27,7 @@ function Menubar() {
               onMouseEnter={() => setShowDropdown(true)}
               onMouseLeave={() => setShowDropdown(false)}
             >
-              <NavDropdown.Item as={Link} to="/services">Software Development</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/service/software development">Software Development</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/services">Web Development</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/services">App Development</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/services">Digital Marketing</NavDropdown.Item>

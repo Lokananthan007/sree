@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #1E1E1E;
+    --secondary-color: #4A4A4A;
+    --accent-color: #FFD700;
+    --text-color: #FFFFFF;
+    --button-color: #FFD000;
+    --box-shadow-color: #3e3e3e63;
+  }
+  
+#MissionAndVision {
+    width: 100%;
+    padding: 60px 80px;
+    margin: 0 auto;
+}
+
+#MissionAndVision .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#MissionAndVision .col {
+    flex: 1 1 calc(50% - 20px); 
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px 20px !important;
+    box-shadow: 0px 0px 10px var(--box-shadow-color);
+}
+
+#MissionAndVision h4 {
+    color: var(--primary-color);
+    font-size: clamp(18px, 3vw, 30px);
+    font-weight: 800;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#MissionAndVision h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: clamp(40px, 10vw, 60px);
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+#MissionAndVision p{
+    color: var(--secondary-color);
+    font-size: clamp(14px, 1.5vw, 20px);
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    #MissionAndVision .col {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #MissionAndVision {
+      padding: 60px 60px;
+    }
+  }
+  
+  @media (max-width: 820px) {
+  
+    #MissionAndVision {
+        padding: 60px 50px;
+    }
+  }
+  
+  @media (max-width: 660px) {
+  
+    #MissionAndVision {
+        padding: 60px 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #MissionAndVision {
+        padding: 60px 20px;
+    }
+  }
+  

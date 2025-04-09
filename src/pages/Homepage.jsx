@@ -6,7 +6,7 @@ import Azure from "../assets/images/home-icon (4).png";
 
 function Homepage(){
     return(
-        <div id="home">
+        <div id="homepage">
             <h3>Expert Software Developers</h3>
             <h2>Top Software & App Development Company</h2>
             <h3>for Digital Growth Solutions</h3>

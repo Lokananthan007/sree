@@ -12,10 +12,10 @@ function Contact() {
 
         emailjs
             .sendForm(
-                'service_x7e0vq6',    // replace with your actual Service ID
-                'template_hb1q1pb',   // replace with your Template ID
+                'service_x7e0vq6',    
+                'template_hb1q1pb',  
                 form.current,
-                'lS-I7TADeeDhnknVa'     // replace with your EmailJS Public Key
+                'lS-I7TADeeDhnknVa'    
             )
             .then((result) => {
                 alert("Message sent successfully!");
@@ -41,7 +41,7 @@ function Contact() {
                 <div className="form-group">
                     <input type="email" name="user_email" placeholder="Provide your email address" required />
                     <select name="project_type" required>
-                        <option value="" disabled selected>Select Project Type</option>
+                        <option  disabled selected>Select Project Type</option>
                         <option>App Development</option>
                         <option>Software Development</option>
                         <option>Web Development</option>

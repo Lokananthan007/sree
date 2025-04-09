@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #1e1e1e;
+    --secondary-color: #4a4a4a;
+    --accent-color: #ffd700;
+    --text-color: #ffffff;
+    --button-color: #ffd000;
+  }
+  
+  #LifeCycle {
+    width: 100%;
+    min-height: auto;
+    padding: 0px 80px;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+
+  #LifeCycle h3{
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    font-size: clamp(20px, 4vw, 40px);
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+
+  .Lifecard-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .Lifecard {
+    width: calc(100% / 3 - 20px);
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    background-color: #fff;
+  }
+  
+  .Lifecard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .Lifecontent-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Lifeimage-container {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  
+  .Lifeimage-container img {
+    max-width: 80px;
+    height: auto;
+    pointer-events: none;
+    -webkit-user-drag: none;
+  }
+
+  /* Card Text & Title Styling */
+  .Lifetext-container {
+    text-align: left;
+  }
+  
+  .Lifetext-container h3,
+  .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .Lifetext-container p,
+  .card-text {
+    font-size: .8rem;
+    color: var(--secondary-color);
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .Lifecard {
+      width: calc(100% / 3 - 15px);
+    }
+  }
+  
+  @media (max-width: 950px) {
+    .Lifecard {
+        width: calc(100% / 2 - 15px);
+    }
+  }
+  
+  @media (max-width: 620px) {
+    .Lifecard {
+        width: 100%;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    #LifeCycle {
+      padding: 0px 40px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #LifeCycle {
+      padding: 0px 20px;
+      padding-bottom: 20px;
+    }
+  
+    .Lifecontent-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .Lifeimage-container {
+      margin-bottom: 12px;
+      margin-right: 0;
+    }
+  
+    .Lifeimage-container img {
+      max-width: 60px;
+    }
+  }
+  

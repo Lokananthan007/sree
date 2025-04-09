@@ -12,7 +12,7 @@ import Whychoosecard from "../pages/Whychoosecard";
 
 function Home(){
     return(
-        <div>
+        <>
             <Homepage/>
             <Ourservices/>
             <Ourservicescard/>
@@ -24,7 +24,7 @@ function Home(){
             <Ourworkcard/>
             <Whatsays/>
             <Contact/>
-        </div>
+        </>
     );
 }
 export default Home;

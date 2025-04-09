@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io5";
 
+
 function Footercontent () {
     return (
         <>
@@ -16,7 +17,7 @@ function Footercontent () {
                         <h4>Our Services</h4>
                         <ul>
                             <li><IoArrowRedoOutline /><a href="/service1">App Development</a></li>
-                            <li><IoArrowRedoOutline /><a href="/service2">Software Development</a></li>
+                            <li><IoArrowRedoOutline /><a href="/Service/Software development">Software Development</a></li>
                             <li><IoArrowRedoOutline /><a href="/service3">Web Development</a></li>
                             <li><IoArrowRedoOutline /><a href="/service4">Digital Marketing</a></li>
                         </ul>
