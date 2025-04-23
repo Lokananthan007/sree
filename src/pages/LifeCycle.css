@@ -21,6 +21,7 @@
     font-size: clamp(20px, 4vw, 40px);
     font-weight: 600;
     color: var(--primary-color);
+    text-transform: uppercase;
   }
 
   .Lifecard-container {

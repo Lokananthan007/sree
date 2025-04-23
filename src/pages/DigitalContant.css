@@ -6,7 +6,7 @@
     --button-color: #ffd000;
   }
   
-  #Ourwork {
+  #DigitalContant {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,16 +15,16 @@
     text-align: center;
     justify-content: center;
     background-color: var(--text-color);
+    padding-top: 80px;
   }
   
-  #Ourwork h3 {
+  #DigitalContant h3 {
     font-size: clamp(20px, 4vw, 40px);
     font-weight: 600;
     color: var(--primary-color);
-    text-transform: uppercase;
   }
   
-  #Ourwork p {
+  #DigitalContant p {
     padding-top: 10px;
     font-weight: 500;
     font-size: clamp(12px, 1.5vw, 20px);
@@ -33,25 +33,25 @@
     
   /* Responsive padding adjustments */
   @media (max-width: 1024px) {
-    #Ourwork {
+    #DigitalContant {
       padding: 40px 60px;
     }
   }
   
   @media (max-width: 820px) {
-    #Ourwork {
+    #DigitalContant {
       padding: 40px 50px;
     }
   }
   
   @media (max-width: 660px) {
-    #Ourwork {
+    #DigitalContant {
       padding: 40px 40px;
     }
   }
   
   @media (max-width: 480px) {
-    #Ourwork {
+    #DigitalContant {
       padding: 20px 20px;
     }
   }

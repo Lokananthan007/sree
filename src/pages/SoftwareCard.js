@@ -4,9 +4,9 @@ import { FaUsersCog, FaCogs, FaDesktop, FaGlobe } from "react-icons/fa";
 function SoftwareCard() {
     return (
         <div id="SoftwareCard">
-            <div className="row">
+            <div className="row" data-animate="fade-in" data-delay="0.2s">
                 <div className="col" data-animate="fade-in" data-delay="0.2s">
-                    <h4 data-animate="fade-in" data-delay="0.2s">
+                    <h4 >
                         <FaUsersCog style={{ marginRight: "8px" }} size={40} color="#FFD700" />
                         Custom CRM Development
                     </h4>
@@ -45,7 +45,7 @@ function SoftwareCard() {
                     </h4>
                     <p data-animate="fade-in" data-delay="0.2s">
                         Our custom web apps deliver seamless user experiences, enhanced functionalit
-                         and scalable performance for diverse industries.
+                        and scalable performance for diverse industries.
                     </p>
                 </div>
             </div>

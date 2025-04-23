@@ -1,13 +1,10 @@
 import "./MissionAndVision.css";
-import useGlobalScroll from "../animation/useGlobalScroll";
 
 function MissionAndVision () {
 
-    useGlobalScroll();
-
     return (
         <div id="MissionAndVision">
-            <div className="row">
+            <div className="row" data-animate="fade-in" data-delay="0.2s">
                 <div className="col" data-animate="fade-in" data-delay="0.2s">
                     <h4 data-animate="fade-in" data-delay="0.2s">Our Mission</h4>
                     <p data-animate="fade-in" data-delay="0.2s">
@@ -22,7 +19,7 @@ function MissionAndVision () {
                     <h4 data-animate="fade-in" data-delay="0.2s">Our Vision</h4>
                     <p data-animate="fade-in" data-delay="0.2s">
                         Our vision is to shape the future of technology by redefining what’s possible. 
-                        Through continuous innovation, we aim to empower businesses, foster sustainable growth, 
+                        Through continuous innovation, we aim to empower businesses, foster sustainable growth 
                         and create lasting impact in an ever-changing digital world. With a focus on pushing boundaries, 
                         we strive to set new standards in technology and transformation.
                     </p>
@@ -41,8 +38,8 @@ function MissionAndVision () {
                 <div className="col" data-animate="fade-in" data-delay="0.2s">
                     <h4 data-animate="fade-in" data-delay="0.2s">Our Values</h4>
                     <p data-animate="fade-in" data-delay="0.2s">
-                        Our values are rooted in excellence, dedication, and integrity. We are committed to developing 
-                        impactful web and mobile solutions, and custom applications that help our clients thrive in the digital 
+                        Our values are rooted in excellence, dedication and integrity. We are committed to developing 
+                        impactful web and mobile solutions and custom applications that help our clients thrive in the digital 
                         landscape. Transparency and long-term trust define our collaborations, while continuous learning 
                         and innovation fuel our growth and ability to adapt.
                     </p>

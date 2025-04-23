@@ -1,4 +1,4 @@
-// src/useGlobalScroll.js
+// src/animation/useGlobalScroll.js
 import { useEffect } from "react";
 
 const useGlobalScroll = () => {
@@ -10,7 +10,7 @@ const useGlobalScroll = () => {
         const windowHeight = window.innerHeight;
         const delay = element.dataset.delay || "0s";
 
-        if (top < windowHeight - 50) {
+        if (top < windowHeight - 0) {
           element.style.transitionDelay = delay;
           element.classList.add("animate");
         } else {

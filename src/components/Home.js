@@ -9,8 +9,12 @@ import Techlogo from "../pages/Techlogo";
 import Whatsays from "../pages/Whatsays";
 import Whychoose from "../pages/Whychoose";
 import Whychoosecard from "../pages/Whychoosecard";
+import { useEffect } from "react";
 
 function Home(){
+        useEffect(() => {
+            document.title = "Home | Sree Infinity Tech";
+          }, []);
     return(
         <>
             <Homepage/>

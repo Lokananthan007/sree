@@ -8,10 +8,8 @@ import {
   FaRocket,
   FaTools
 } from "react-icons/fa";
-import useGlobalScroll from "../animation/useGlobalScroll";
 
 function LifeCycle() {
-  useGlobalScroll();
 
   const cardData = [
     {
@@ -47,8 +45,8 @@ function LifeCycle() {
   ];
 
   return (
-    <div id="LifeCycle">
-      <h3>Project Life Cycle</h3>
+    <div id="LifeCycle" data-animate="fade-in" data-delay="0.2s">
+      <h3 data-animate="fade-in" data-delay="0.2s">Project Life Cycle</h3>
       <div className="Lifecard-container" data-animate="fade-in" data-delay="0.2s">
         {cardData.map((card, index) => (
           <Card key={index} className="Lifecard" data-animate="fade-in" data-delay="0.2s">
@@ -57,8 +55,8 @@ function LifeCycle() {
                 {card.icon}
               </div>
               <Card.Body className="Lifetext-container" data-animate="fade-in" data-delay="0.2s">
-                <Card.Title>{card.title}</Card.Title>
-                <Card.Text>{card.text}</Card.Text>
+                <Card.Title data-animate="fade-in" data-delay="0.2s">{card.title}</Card.Title>
+                <Card.Text data-animate="fade-in" data-delay="0.2s">{card.text}</Card.Text>
               </Card.Body>
             </div>
           </Card>

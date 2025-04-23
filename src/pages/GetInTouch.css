@@ -1,0 +1,203 @@
+:root {
+    --primary-color: #1e1e1e;
+    --secondary-color: #4a4a4a;
+    --accent-color: #ffd700;
+    --text-color: #ffffff;
+    --button-color: #ffd000;
+}
+
+#GetInTouch {
+    width: 100%;
+    padding: 0px 80px;
+    padding-top: 60px;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    box-sizing: border-box;
+}
+
+.contact-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    max-width: 700px;
+}
+
+.contact-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.Getcard {
+    width: calc(100% / 3 - 20px);
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    padding: 20px;
+    border: none;
+}
+
+.Getcard:hover {
+    transform: translateY(-5px);
+}
+
+.Getcontent-container {
+    display: flex;
+    align-items: center;
+}
+
+.Getimage-container {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.Getimage-container img {
+    max-width: 60px;
+    height: auto;
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+.Gettext-container {
+    text-align: left;
+}
+
+.Gettext-container h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.Gettext-container p {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.contact-link {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.contact-cta {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-cta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-cta p {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6c000;
+}
+
+.contact-faq {
+    margin-top: 60px;
+}
+
+.contact-faq h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.contact-faq ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-faq li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .Getcard {
+        width: calc(100% / 3 - 15px);
+    }
+}
+
+@media (max-width: 950px) {
+    .Getcard {
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    #GetInTouch {
+        padding: 40px 40px;
+    }
+
+    .contact-options {
+        flex-direction: column;
+    }
+
+    .Getcard {
+        width: 100%;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+
+    .Getcontent-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Getimage-container {
+        margin-bottom: 12px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #GetInTouch {
+        padding: 20px 20px;
+    }
+
+    .contact-header h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-header p {
+        font-size: 0.8rem;
+    }
+
+    .Getimage-container img {
+        max-width: 50px;
+    }
+}

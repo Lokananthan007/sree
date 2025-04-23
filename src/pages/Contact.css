@@ -19,6 +19,7 @@
     color: var(--primary-color);
     font-size: clamp(25px, 5vw, 50px);
     text-align: left;
+    text-transform: uppercase;
 }
 
 #Contact p {

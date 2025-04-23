@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #1E1E1E;
+    --secondary-color: #4A4A4A;
+    --accent-color: #FFD700;
+    --text-color: #FFFFFF;
+    --button-color: #FFD000;
+  }
+  
+#App {
+    position: relative;
+    width: 100%;
+    background-image: url(../assets/images/App-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    padding-top: 80px;
+}
+
+/* Add a black overlay with opacity */
+#App::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719); 
+    z-index: 0;
+}
+
+/* Content stays on top */
+#App > * {
+    position: relative;
+    z-index: 1;
+}
+
+#App h3{
+  font-size: clamp(20px, 4vw, 40px);
+  font-weight: 600;
+  color: var(--accent-color);
+  padding-bottom: 18px;
+  letter-spacing: 2px;
+}
+
+#App p{
+  font-size: clamp(15px, 1.8vw, 25px);
+  font-weight: 300;
+  color: var(--text-color);
+  padding-bottom: 18px;
+  letter-spacing: 2px;
+}
+
+#App .btn {
+    width: clamp(100px, 30vw, 300px);
+    color: var(--primary-color);
+    background-color: var(--button-color);
+    font-size: clamp(12px, 2.2vw, 22px);
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+/* Button hover effect */
+#App .btn:hover {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 0px 5px var(--accent-color);
+}
+
+
+
+@media (max-width: 1024px) {
+
+    #App {
+      padding: 60px;
+      padding-top: 60px;
+    }
+  }
+  
+  @media (max-width: 820px) {
+  
+    #App {
+      padding: 50px;
+      padding-top: 50px;
+    }
+  }
+  
+  @media (max-width: 660px) {
+  
+    #App {
+      padding: 40px;
+      padding-top: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+  
+    #App {
+      padding: 20px;
+      padding-top: 20px;
+    }
+  }
+  

@@ -7,12 +7,10 @@ import AGILE from "../assets/images/choose-icon (6).jpg";
 import RISK from "../assets/images/choose-icon (4).png";
 import STAND from "../assets/images/choose-icon (5).png";
 import DEVELOPERS from "../assets/images/choose-icon (3).png";
-import useGlobalScroll from "../animation/useGlobalScroll";
 
 
 function Whychoosecard() {
 
-  useGlobalScroll();
 
   const cardData = [
     {
@@ -48,12 +46,12 @@ function Whychoosecard() {
   ];
 
   return (
-    <div id="Whychoosecard">
+    <div id="Whychoosecard" data-animate="fade-in" data-delay="0.2s">
       <div className="Whycard-container" data-animate="fade-in" data-delay="0.2s">
         {cardData.map((card, index) => (
           <Card key={index} className="Whycard" data-animate="fade-in" data-delay="0.2s">
             <div className="Whycontent-container" data-animate="fade-in" data-delay="0.2s">
-              <div className="Whyimage-container">
+              <div className="Whyimage-container" data-animate="fade-in" data-delay="0.2s">
                 <Image src={card.img} alt={card.title} fluid />
               </div>
               <Card.Body className="Whytext-container" data-animate="fade-in" data-delay="0.2s">

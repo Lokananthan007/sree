@@ -19,7 +19,6 @@ import {
   SiFlask,
   SiSpringboot,
 } from "react-icons/si";
-import useGlobalScroll from "../animation/useGlobalScroll";
 
 
 function Techlogo() {
@@ -50,10 +49,9 @@ function Techlogo() {
   // Duplicate items to create seamless scrolling
   const duplicateItems = (items) => [...items, ...items];
 
-  useGlobalScroll();
 
   return (
-    <div id="Techlogo">
+    <div id="Techlogo" data-animate="fade-in" data-delay="0.2s">
       {/* Row 1: Languages */}
       <div className="tech-row left-to-right" data-animate="fade-in" data-delay="0.2s">
         <div className="tech-track" data-animate="fade-in" data-delay="0.2s">

@@ -7,8 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io5";
 
-
-function Footercontent () {
+function Footercontent() {
     return (
         <>
             <div id="Footercontent">
@@ -16,10 +15,10 @@ function Footercontent () {
                     <div className="col">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><IoArrowRedoOutline /><a href="/service1">App Development</a></li>
-                            <li><IoArrowRedoOutline /><a href="/Service/Software development">Software Development</a></li>
-                            <li><IoArrowRedoOutline /><a href="/service3">Web Development</a></li>
-                            <li><IoArrowRedoOutline /><a href="/service4">Digital Marketing</a></li>
+                            <li><IoArrowRedoOutline /><a href="/service/app development">App Development</a></li>
+                            <li><IoArrowRedoOutline /><a href="/service/software development">Software Development</a></li>
+                            <li><IoArrowRedoOutline /><a href="/service/web development">Web Development</a></li>
+                            <li><IoArrowRedoOutline /><a href="/service/digital marketing">Digital Marketing</a></li>
                         </ul>
                     </div>
                     <div className="col">
@@ -27,22 +26,18 @@ function Footercontent () {
                         <ul>
                             <li><IoArrowRedoOutline /><a href="/">Home</a></li>
                             <li><IoArrowRedoOutline /><a href="/About">About</a></li>
-                            <li><IoArrowRedoOutline /><a href="/Portfolio">Portfolio</a></li>
-                            <li><IoArrowRedoOutline /><a href="/Contact">Contact</a></li>
+                            <li><IoArrowRedoOutline /><a href="/work delivered">Work Delivered</a></li>
+                            <li><IoArrowRedoOutline /><a href="/contact us">Contact</a></li>
                         </ul>
                     </div>
                     <div className="col">
                         <h4>GET IN TOUCH</h4>
                         <ul>
                             <li>
-                                <TfiEmail /><br/>
-                                <a href="mailto:sreeinfinitytech@gmail.com">sreeinfinitytech@gmail.com</a>
-                                </li>
-                                <li>
-                                <BiPhoneCall /><br/>
-                                <a href="tel:+916380561611">6380561611</a>
+                                <TfiEmail /> <a href="mailto:sreeinfinitytech@gmail.com">sreeinfinitytech@gmail.com</a><br />
+                                <BiPhoneCall /> <a href="tel:+917200447570">+91 72004 47570</a><br />
+                                <strong>Open:</strong> Monday - Saturday, 9:00 AM - 6:00 PM
                             </li>
-
                         </ul>
                     </div>
                     <div className="col">
@@ -50,25 +45,25 @@ function Footercontent () {
                         <ul>
                             <li>
                                 <FaInstagram />
-                                <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.instagram.com/sreeinfinitytech" target="_blank" rel="noopener noreferrer">
                                     Instagram
                                 </a>
-                                </li>
-                                <li>
+                            </li>
+                            <li>
                                 <FaLinkedin />
                                 <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
                                     LinkedIn
                                 </a>
-                                </li>
-                                <li>
+                            </li>
+                            <li>
                                 <FaSquareFacebook />
-                                <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.facebook.com/profile.php?id=61575187542248" target="_blank" rel="noopener noreferrer">
                                     Facebook
                                 </a>
-                                </li>
-                                <li>
+                            </li>
+                            <li>
                                 <IoLogoWhatsapp />
-                                <a href="https://wa.me/6380561611" target="_blank" rel="noopener noreferrer">
+                                <a href="https://wa.me/+919876543210" target="_blank" rel="noopener noreferrer">
                                     WhatsApp
                                 </a>
                             </li>
@@ -82,4 +77,5 @@ function Footercontent () {
         </>
     );
 };
+
 export default Footercontent;

@@ -1,13 +1,11 @@
 import "./Goto.css";
-import useGlobalScroll from "../animation/useGlobalScroll";
+import { useNavigate } from "react-router-dom";
 
 function Goto(){
-    
-    useGlobalScroll();
-
+    const navigate = useNavigate();
     return(
         <div id="goto" data-animate="fade-in" data-delay="0.2s">
-            <h2 data-animate="fade-in" data-delay="0.2s">READY TO BRING YOUR IDEA TO LIFE <button className="btn">LET'S TALK</button></h2>
+            <h2 data-animate="fade-in" data-delay="0.2s">READY TO BRING YOUR IDEA TO LIFE <button onClick={() => navigate("/contact us")} className="btn">LET'S TALK</button></h2>
         </div>
     );
 }

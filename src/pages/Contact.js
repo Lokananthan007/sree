@@ -12,10 +12,10 @@ function Contact() {
 
         emailjs
             .sendForm(
-                'service_x7e0vq6',    
-                'template_hb1q1pb',  
+                'service_x7e0vq6',
+                'template_hb1q1pb',
                 form.current,
-                'lS-I7TADeeDhnknVa'    
+                'lS-I7TADeeDhnknVa'
             )
             .then((result) => {
                 alert("Message sent successfully!");
@@ -40,8 +40,8 @@ function Contact() {
 
                 <div className="form-group">
                     <input type="email" name="user_email" placeholder="Provide your email address" required />
-                    <select name="project_type" required>
-                        <option  disabled selected>Select Project Type</option>
+                    <select name="project_type" defaultValue="Select" required>
+                        <option value="Select" disabled>Select Project Type</option>
                         <option>App Development</option>
                         <option>Software Development</option>
                         <option>Web Development</option>
@@ -56,7 +56,7 @@ function Contact() {
                     required
                 ></textarea>
 
-                <div className="button-container">
+                <div className="button-container" data-animate="fade-in" data-delay="0.2s">
                     <button type="submit">Submit</button>
                 </div>
             </form>
